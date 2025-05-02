@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Chatbot - Echosphere</title>
+    <link rel="stylesheet" href="../CSS/chatbot.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png" sizes="32x32">
+    <style>
+        /* Inline styling for the translate widget */
+        #google_translate_element {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+
+    <header>
+        <h1>🤖 Awaaz360 Chatbot</h1>
+        <p>Ask any question about sustainability and the environment!</p>
+    </header>
+
+    <main class="chat-container">
+        <div id="chatbox">
+            <div class="bot-message">Hello! Ask me anything about eco-friendly living. 🌱</div>
+        </div>
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+    </main>
+
+    <script src="../JS/chatbot.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

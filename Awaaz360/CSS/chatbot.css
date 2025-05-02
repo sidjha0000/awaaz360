@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ea;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Bar (Further Reduced Height) */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px; /* Balanced padding for better spacing */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px; /* Text remains readable */
+    height: auto; /* Allow dynamic height based on content */
+    display: flex;
+    flex-direction: column; /* Ensures elements stack properly */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px; /* Adjust heading size */
+}
+
+header p {
+    margin: 4px 0 0; /* Add spacing below the heading */
+    font-size: 14px; /* Slightly smaller text for better hierarchy */
+}
+
+
+/* Chat Container */
+.chat-container {
+    margin-top: 60px; /* Adjusted margin to fit the reduced header */
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbox */
+#chatbox {
+    height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #e8f5e9;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Messages */
+.bot-message, .user-message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #ddd;
+    color: black;
+    align-self: flex-end;
+}
+
+/* Input Section */
+.input-container {
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #4CAF50;
+}
+
+/* Text Input */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Send Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* Options Container */
+.options-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons in a column */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 10px;
+}
+
+/* Option Buttons */
+.option-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%; /* Make it full-width inside the chat */
+    text-align: center;
+}
+
+.option-button:hover {
+    background-color: #388E3C;
+}
+

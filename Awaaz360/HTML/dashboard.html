@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaaz360 Dashboard</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <style>
+        /* Ensure the language selector is visible and not hidden */
+        #google_translate_element {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Welcome to Awaaz360</h2>
+                <p>Dashboard</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chatbot.html">Awaaz360 bot</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Report an Issue</h1>
+            </div>
+
+            <div class="report-form">
+                <form id="reportForm">
+                    <input type="text" id="problemTitle" placeholder="Problem Title" required>
+                    <textarea id="problemDescription" placeholder="Describe the issue" rows="4" required></textarea>
+                    <input type="file" id="problemFile" accept="image/*,.pdf">
+                    <button type="submit" class="submit-btn">Submit Report</button>
+                </form>
+            </div>
+
+            <div class="progress-tracker">
+                <h2>Track Your Progress</h2>
+                <div id="reportList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/dashboard.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+</body>
+</html>

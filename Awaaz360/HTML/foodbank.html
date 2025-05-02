@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Food Bank - Awaaz360</title>
+    <link rel="stylesheet" href="../CSS/foodbank.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <style>
+        /* Position the Google Translate element */
+        #google_translate_element {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <div class="container">
+        <h1>🍛 Community Food Bank</h1>
+
+        <form id="foodForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <select id="type" required>
+                <option value="">Select Type</option>
+                <option value="Donate">Donate</option>
+                <option value="Request">Request</option>
+            </select>
+            <textarea id="description" placeholder="Food details or your need..." required></textarea>
+            <input type="text" id="location" placeholder="Village / Area" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="entries">
+            <h2>📋 All Entries</h2>
+            <ul id="entryList"></ul>
+        </div>
+    </div>
+
+    <script src="../JS/foodbank.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',  // Modify this list as per your desired languages
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

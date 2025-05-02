@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Contributions - EcoGenius</title>
+    <link rel="stylesheet" href="../CSS/community.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <style>
+        #google_translate_element {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <header>
+        <div class="header-logo">
+            🌍 Awaaz360
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Community Contributions Section -->
+        <section class="community-contributions">
+            <h2>🌱 Community Contributions</h2>
+            <p>Share your eco-friendly actions with the community and inspire others to make a difference! 🌍</p>
+
+            <!-- Form to submit a new contribution -->
+            <form id="contribution-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="contribution">Your Contribution:</label>
+                <textarea id="contribution" placeholder="Describe your eco-friendly action or idea" required></textarea>
+
+                <button type="submit" class="btn">Submit Contribution</button>
+            </form>
+
+            <!-- List of contributions -->
+            <h3>Previous Contributions</h3>
+            <div id="contributions-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌱 EcoGenius | A Step Towards a Greener Future | Contact: support@ecogenius.com</p>
+    </footer>
+
+    <script src="../JS/community.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

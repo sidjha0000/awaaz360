@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Requirements - Awaaz360</title>
+    <link rel="stylesheet" href="../CSS/requirement.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Village Requirements</h1>
+            <p>Submit important needs for your village through Awaaz360</p>
+        </header>
+
+        <section class="form-section">
+            <form id="requirementForm">
+                <input type="text" id="reqTitle" placeholder="Requirement Title" required>
+                <textarea id="reqDescription" placeholder="Describe the need" rows="4" required></textarea>
+                <select id="reqCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Health">Health</option>
+                    <option value="Education">Education</option>
+                    <option value="Water Supply">Water Supply</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit">Submit Requirement</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>📝 Submitted Requirements</h2>
+            <ul id="requirementList"></ul>
+        </section>
+    </div>
+
+    <script src="../JS/requirement.js"></script>
+</body>
+</html>

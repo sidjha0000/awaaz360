@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f9f7;
+    color: #2e2e2e;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    padding: 15px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background-color: #388e3c;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1b5e20;
+}
+
+.intro {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.learn-link {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.learn-link:hover {
+    background-color: #43a047;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}

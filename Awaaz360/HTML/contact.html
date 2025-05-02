@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Awaaz360</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+    
+    <style>
+        #google_translate_element {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <div class="contact-container">
+        <h1>📢 Contact Us</h1>
+        <p>Have questions, feedback, or suggestions? Reach out — we’d love to hear from you!</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="confirmation" id="confirmationMsg"></div>
+    </div>
+
+    <script src="../JS/contact.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+</body>
+</html>

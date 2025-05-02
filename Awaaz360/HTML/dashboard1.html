@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awaaz360 - Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/dashboard1.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <style>
+        /* Position the Google Translate element */
+        #google_translate_element {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <div class="admin-container">
+        <h1>Admin Dashboard - Review Reports</h1>
+        <div id="reportList"></div>
+    </div>
+
+    <script src="../JS/dashboard1.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',  // Modify this list as per your desired languages
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

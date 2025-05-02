@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaaz360 - Register</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <div class="register-container">
+        <!-- Google Translate Widget -->
+        <div id="google_translate_element"></div>
+
+        <h2>Register to Awaaz360</h2>
+        <form method="POST" action="../PHP/register.php" onsubmit="return validateForm()">
+            <input type="text" name="name" placeholder="Name" required>
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" required pattern="\d{10}">
+            <input type="text" name="aadhaar" id="aadhaar" placeholder="Aadhaar Number" required pattern="\d{12}">
+
+            <select name="role" required>
+                <option value="">Register As</option>
+                <option value="villager">Villager</option>
+                <option value="chief">Village Chief</option>
+                <option value="authority">Higher Authority</option>
+            </select>
+
+            <input type="text" name="village" placeholder="Village Name" required>
+            <input type="text" name="ward" placeholder="Ward Number" required>
+            <input type="text" name="district" placeholder="District" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="pincode" placeholder="Pin Code" required>
+            <textarea name="address" placeholder="Full Address" rows="3" required></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <center>Have an account? <a href="http://localhost/Awaaz360/HTML/login.html">Login here!</a></center>
+    </div>
+
+    <script src="../JS/register.js"></script>
+
+    <!-- Validation Script -->
+    <script type="text/javascript">
+        function validateForm() {
+            var mobile = document.getElementById('mobile').value;
+            var aadhaar = document.getElementById('aadhaar').value;
+
+            if (mobile.length !== 10) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return false;
+            }
+
+            if (aadhaar.length !== 12) {
+                alert("Please enter a valid 12-digit Aadhaar number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

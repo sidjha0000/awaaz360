@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awaaz360 - Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+    
+    <!-- Google Translate script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Google Translate widget -->
+        <div id="google_translate_element"></div>
+        
+        <h2>Login to Awaaz360</h2>
+        <form action="../PHP/login.php" method="POST">
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="villager">Villager</option>
+                <option value="chief">Village Chief</option>
+                <option value="authority">Higher Authority</option>
+            </select>
+        
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="aadhaar" placeholder="Aadhaar Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+        
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+</html>

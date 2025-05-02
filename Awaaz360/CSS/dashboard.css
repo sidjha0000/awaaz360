@@ -1,0 +1,173 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2f4f4f;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+}
+
+.sidebar-header p {
+    font-size: 16px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #00bfff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.report-form input, .report-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #00bfff;
+}
+
+.progress-tracker {
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2f4f4f;
+    color: white;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    appearance: none;
+}
+
+/* Dropdown (select) styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styling the placeholder text for the dropdown */
+select option:first-child {
+    color: #aaa;
+}
+
+/* Styling for the options inside the dropdown */
+select option {
+    color: #333;
+    padding: 10px;
+}
+
+/* Remove the default dropdown arrow and add a custom one */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="%23000" d="M4 5l4 4 4-4z"%3E%3C/path%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 12px;
+}
+
+/* Hover effect for the dropdown options */
+select:hover {
+    border-color: #4CAF50;
+}
+
+/* Focused state for the dropdown */
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.2);
+}
+

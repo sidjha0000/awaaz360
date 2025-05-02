@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaaz360 - Education for Sustainability</title>
+    <link rel="stylesheet" href="../CSS/education.css">
+    <link rel="icon" href="../assect/logo (2).png" type="image/png">
+
+    <style>
+        /* Position the Google Translate element */
+        #google_translate_element {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 1000;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div id="google_translate_element"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Awaaz360</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="login.html">Report Issue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Educational Resources on Sustainability</h1>
+
+            <section class="topic">
+                <h2>Sustainable Agriculture</h2>
+                <p>Sustainable agriculture practices preserve resources, protect ecosystems, and ensure that farming can continue in the long term. Practices like crop rotation, agroecology, and organic farming help minimize environmental impact.</p>
+                <a href="../HTML/Sustainable Agriculture.html" target="_blank" class="learn-more">Learn More</a>
+            </section>
+
+            <section class="topic">
+                <h2>Water Conservation</h2>  
+                <p>Water is a finite resource, and conserving it is crucial for sustainability. Simple practices like fixing leaks, using water-efficient appliances, and collecting rainwater can significantly reduce water consumption.</p>
+                <a href="../HTML/water.html" target="_blank" class="learn-more">Learn More</a>
+            </section>
+
+            <section class="topic">
+                <h2>Energy Conservation</h2>
+                <p>Conserving energy helps reduce carbon emissions, lower energy bills, and protect natural resources. You can conserve energy by using LED lights, installing solar panels, and switching to energy-efficient appliances.</p>
+                <a href="../HTML/Energy Conservation.html" target="_blank" class="learn-more">Learn More</a>
+            </section>
+
+            <section class="topic">
+                <h2>Zero Waste Lifestyle</h2>
+                <p>A zero-waste lifestyle reduces the amount of waste generated and promotes reusing, recycling, and composting. It's a practical way to minimize your environmental impact and make a positive contribution to sustainability.</p>
+                <a href="../HTML/zero-waste.html" target="_blank" class="learn-more">Learn More</a>
+            </section>
+
+            <section class="topic">
+                <h2>Wildlife Protection</h2>
+                <p>Protecting wildlife is essential for maintaining biodiversity. Habitat protection, supporting conservation programs, and avoiding illegal wildlife trade all play vital roles in protecting endangered species.</p>
+                <a href="../HTML/wildlife.html" target="_blank" class="learn-more">Learn More</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Awaaz360. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,hi,kn',  // Modify this list as per your desired languages
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

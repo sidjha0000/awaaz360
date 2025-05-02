@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Alerts & First Aid - Awaaz360</title>
+  <link rel="icon" href="../assect/logo (2).png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0 0 80px 0; /* leave space for notification */
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+    }
+
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    li {
+      background: #f1f1f1;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* Notification Carousel */
+    .carousel-container {
+      position: fixed;
+      bottom: 15px;
+      left: 20px;
+      right: 20px;
+      background-color: #27ae60;
+      color: white;
+      padding: 15px;
+      border-radius: 30px;
+      font-size: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .carousel-text {
+      white-space: nowrap;
+      animation: slide-left 20s linear infinite;
+    }
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏥 Health Alerts & First Aid</h1>
+
+    <section class="alert-section">
+      <h2>🛑 Current Health Alerts</h2>
+      <ul id="healthAlerts">
+        <li>Dengue outbreak in Ward 4 – Use mosquito repellents 🦟</li>
+        <li>Free medical camp on 25th April at Primary School 🏫</li>
+        <li>Heat wave warning – Stay hydrated! 💧</li>
+      </ul>
+    </section>
+
+    <section class="form-section">
+      <h2>📨 Report Medical Issue</h2>
+      <form id="healthForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="issue" placeholder="Describe your health concern..." required></textarea>
+        <input type="text" id="location" placeholder="Village / Ward" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="first-aid">
+      <h2>🩹 Basic First Aid Tips</h2>
+      <ul>
+        <li><strong>For Burns:</strong> Cool the burn with water for 10-15 minutes.</li>
+        <li><strong>For Cuts:</strong> Clean with water, apply pressure, and cover with a clean cloth.</li>
+        <li><strong>For Fainting:</strong> Lay the person down and elevate legs.</li>
+        <li><strong>For Snake Bites:</strong> Keep the area still and seek medical help immediately.</li>
+      </ul>
+    </section>
+
+    <section class="submitted-section">
+      <h2>📋 Submitted Reports</h2>
+      <ul id="submittedIssues"></ul>
+    </section>
+  </div>
+
+  <!-- Notification Carousel -->
+  <div class="carousel-container">
+    <div class="carousel-text" id="carouselText">
+        🦟 Dengue Alert in Ward 4 – Use mosquito nets and repellents!
+        🏥 Free Health Camp on April 25 at Govt. Primary School – Don’t miss it!
+        🔥 Heatwave Warning – Drink water regularly and avoid going out during peak hours!
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("healthForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const issue = document.getElementById("issue").value;
+      const location = document.getElementById("location").value;
+
+      const listItem = document.createElement("li");
+      listItem.textContent = `🧑 ${name} reported: "${issue}" at ${location}`;
+      document.getElementById("submittedIssues").appendChild(listItem);
+      document.getElementById("healthForm").reset();
+    });
+  </script>
+</body>
+</html>

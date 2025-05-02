@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 500px;
+    background-color: #ffffff;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    background-color: #43a047;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2e7d32;
+}
+
+.confirmation {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #2e7d32;
+}

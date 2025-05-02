@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awaaz360 - Empowering Villages for a Sustainable Future</title>
+  <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/jquery-i18next@1.2.1/dist/umd/jquery-i18next.min.js"></script>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="icon" href="../assect/logo (2).png" type="image/png" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-logo">
+      <img src="../assect/logo (2).png" alt="Awaaz360 Logo" class="logo" />
+      <span data-i18n="title">Awaaz360</span>
+    </div>
+  
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="http://localhost/Awaaz360/HTML/register.html" data-i18n="register">Register</a></li>
+        <li><a href="education.html" data-i18n="education">Education</a></li>
+        <li><a href="chatbot.html" data-i18n="chatbot">Chat-bot</a></li>
+        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+        <li><a href="about.html" data-i18n="about">About Us</a></li>
+        <li class="language-select">
+            <select id="languageSwitcher">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी</option>
+              <option value="kn">ಕನ್ನಡ</option>
+            </select>
+          </li>
+          
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 data-i18n="hero_heading">Raise Your Voice for a Better Village 🌍</h1>
+      <p data-i18n="hero_text">Report illegal activities and promote sustainability in your village, anonymously and securely.</p>
+      <a href="http://localhost/Awaaz360/HTML/login.html" class="btn-primary" data-i18n="complaints">Add Complaints</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 data-i18n="about_title">About Awaaz360</h2>
+      <p data-i18n="about_text">Report illegal activities and promote sustainability in your village, anonymously and securely.</p>
+      
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2 data-i18n="features_title">Key Features</h2>
+      <div class="features-container">
+        <div class="feature-item">
+          <h3 data-i18n="feature1_title">🔊 Anonymous Reporting</h3>
+          <p data-i18n="feature1_desc">Submit complaints anonymously without the fear of retaliation.</p>
+        </div>
+        <div class="feature-item">
+          <h3 data-i18n="feature2_title">📱 Accessible to Everyone</h3>
+          <p data-i18n="feature2_desc">Accessible via mobile for easy reporting from anywhere in the village.</p>
+        </div>
+        <div class="feature-item">
+          <h3 data-i18n="feature3_title">⚖️ Escalation to Higher Authorities</h3>
+          <p data-i18n="feature3_desc">If no action is taken by the village chief, the issue is escalated automatically to higher authorities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <h2 data-i18n="how_title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3 data-i18n="step1_title">1. Report an Issue</h3>
+          <p data-i18n="step1_desc">Take a photo or describe the issue, and submit it through the app.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="step2_title">2. Village Chief Review</h3>
+          <p data-i18n="step2_desc">The village chief reviews the report and takes necessary action.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="step3_title">3. Automatic Escalation</h3>
+          <p data-i18n="step3_desc">If no action is taken in a set time, the report escalates to higher authorities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 data-i18n="contact_title">Contact Us</h2>
+      <p data-i18n="contact_text">If you have any questions or would like to learn more, feel free to reach out to us.</p>
+      <a href="contact.html" class="btn-primary" data-i18n="contact">Contact Us</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Awaaz360. <span data-i18n="footer_rights">All Rights Reserved.</span></p>
+      <ul class="footer-links">
+        <li><a href="community.html" data-i18n="community">Community Contribution</a></li>
+        <li><a href="foodbank.html" data-i18n="food">Need Food</a></li>
+        <li><a href="foodbank.html" data-i18n="medical">Medical Requirement</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- i18next Inline Config -->
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          title: "Awaaz360",
+          register: "Register",
+          education: "Education",
+          chatbot: "Chat-bot",
+          contact: "Contact",
+          about: "About Us",
+          complaints: "Add Complaints",
+          hero_heading: "Raise Your Voice for a Better Village 🌍",
+          hero_text: "Report illegal activities and promote sustainability in your village, anonymously and securely.",
+          about_title: "About Awaaz360",
+          about_text: "Awaaz360 is a platform that empowers villagers to report harmful environmental practices...",
+          features_title: "Key Features",
+          feature1_title: "🔊 Anonymous Reporting",
+          feature1_desc: "Submit complaints anonymously without the fear of retaliation.",
+          feature2_title: "📱 Accessible to Everyone",
+          feature2_desc: "Accessible via mobile for easy reporting from anywhere in the village.",
+          feature3_title: "⚖️ Escalation to Higher Authorities",
+          feature3_desc: "If no action is taken by the village chief, the issue is escalated automatically...",
+          how_title: "How It Works",
+          step1_title: "1. Report an Issue",
+          step1_desc: "Take a photo or describe the issue, and submit it through the app.",
+          step2_title: "2. Village Chief Review",
+          step2_desc: "The village chief reviews the report and takes necessary action.",
+          step3_title: "3. Automatic Escalation",
+          step3_desc: "If no action is taken in a set time, the report escalates...",
+          contact_title: "Contact Us",
+          contact_text: "If you have any questions or would like to learn more...",
+          footer_rights: "All Rights Reserved.",
+          community: "Community Contribution",
+          food: "Need Food",
+          medical: "Medical Requirement"
+        }
+      },
+      hi: {
+        translation: {
+          title: "आवाज़360",
+          register: "पंजीकरण करें",
+          education: "शिक्षा",
+          chatbot: "चैट-बॉट",
+          contact: "संपर्क करें",
+          about: "हमारे बारे में",
+          complaints: "शिकायत जोड़ें",
+          hero_heading: "बेहतर गांव के लिए अपनी आवाज़ उठाएं 🌍",
+          hero_text: "अवैध गतिविधियों की रिपोर्ट करें और अपने गांव में सतत विकास को बढ़ावा दें...",
+          about_title: "आवाज़360 के बारे में",
+          about_text: "आवाज़360 एक ऐसा प्लेटफॉर्म है जो ग्रामीणों को हानिकारक पर्यावरणीय प्रथाओं की रिपोर्ट करने की शक्ति देता है...",
+          features_title: "मुख्य विशेषताएं",
+          feature1_title: "🔊 गुमनाम रिपोर्टिंग",
+          feature1_desc: "बिना किसी डर के गुमनाम रूप से शिकायत करें।",
+          feature2_title: "📱 सभी के लिए सुलभ",
+          feature2_desc: "मोबाइल के माध्यम से कहीं से भी रिपोर्टिंग करें।",
+          feature3_title: "⚖️ उच्च अधिकारियों तक पहुँच",
+          feature3_desc: "यदि कार्रवाई नहीं होती है तो रिपोर्ट स्वतः उच्च अधिकारियों तक पहुँचती है।",
+          how_title: "कैसे काम करता है",
+          step1_title: "1. मुद्दे की रिपोर्ट करें",
+          step1_desc: "फोटो लें या विवरण दें और ऐप से सबमिट करें।",
+          step2_title: "2. सरपंच की समीक्षा",
+          step2_desc: "सरपंच रिपोर्ट की समीक्षा करता है और कार्य करता है।",
+          step3_title: "3. स्वतः एस्केलेशन",
+          step3_desc: "समय पर कार्रवाई न होने पर रिपोर्ट ऊपर भेजी जाती है।",
+          contact_title: "हमसे संपर्क करें",
+          contact_text: "सवाल हो तो बेझिझक संपर्क करें।",
+          footer_rights: "सर्वाधिकार सुरक्षित।",
+          community: "सामुदायिक योगदान",
+          food: "भोजन की आवश्यकता",
+          medical: "चिकित्सा आवश्यकता"
+        }
+      },
+      kn: {
+        translation: {
+          title: "ಆವಾಜ್360",
+          register: "ನೊಂದಣಿ",
+          education: "ಶಿಕ್ಷಣ",
+          chatbot: "ಚಾಟ್‌ಬಾಟ್",
+          contact: "ಸಂಪರ್ಕಿಸಿ",
+          about: "ನಮ್ಮ ಬಗ್ಗೆ",
+          complaints: "ಫಿರ್ಯಾದು ಸೇರಿಸಿ",
+          hero_heading: "ಉತ್ತಮ ಹಳ್ಳಿಗೆ ನಿಮ್ಮ ಧ್ವನಿ ಎತ್ತಿ 🌍",
+          hero_text: "ಅಕ್ರಮ ಚಟುವಟಿಕೆಗಳ ವರದಿ ಮಾಡಿ ಮತ್ತು ಹಳ್ಳಿಯಲ್ಲಿಯೇ ಶಾಶ್ವತತೆ ಉತ್ತೇಜಿಸಿ.",
+          about_title: "ಆವಾಜ್360 ಬಗ್ಗೆ",
+          about_text: "ಆವಾಜ್360 ಹಾನಿಕರ ಪರಿಸರ ಅಭ್ಯಾಸಗಳನ್ನು villagers ವರದಿ ಮಾಡಲು ಶಕ್ತಿಯನ್ನು ನೀಡುತ್ತದೆ...",
+          features_title: "ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು",
+          feature1_title: "🔊 ಅನಾಮಧೇಯ ವರದಿ",
+          feature1_desc: "ಭಯವಿಲ್ಲದೇ ಅನಾಮಧೇಯವಾಗಿ ಫಿರ್ಯಾದು ಸಲ್ಲಿಸಿ.",
+          feature2_title: "📱 ಎಲ್ಲರಿಗೂ ಲಭ್ಯವಿದೆ",
+          feature2_desc: "ಹಳ್ಳಿಯಿಂದಲೇ ಮೊಬೈಲ್ ಮೂಲಕ ವರದಿ ಸಲ್ಲಿಸಿ.",
+          feature3_title: "⚖️ ಉನ್ನತ ಅಧಿಕಾರಿಗಳಿಗೆ ಸ್ಥಳಾಂತರ",
+          feature3_desc: "ಸರಪಂಚರು ಕ್ರಮ ಕೈಗೊಂಡಿಲ್ಲದಿದ್ದರೆ, ವರದಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮೇಲ್ದರ್ಜೆಗೆ ಸಾಗುತ್ತದೆ.",
+          how_title: "ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+          step1_title: "1. ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ",
+          step1_desc: "ಸಮಸ್ಯೆಯ ಚಿತ್ರ ತೆಗೆದು ಅಥವಾ ವಿವರಣೆ ನೀಡಿ.",
+          step2_title: "2. ಸರಪಂಚ ಪರಿಶೀಲನೆ",
+          step2_desc: "ಸರಪಂಚ ವರದಿ ಪರಿಶೀಲಿಸಿ ಕ್ರಮ ಕೈಗೊಳ್ಳುತ್ತಾರೆ.",
+          step3_title: "3. ಸ್ವಯಂಚಾಲಿತ ಸ್ಥಳಾಂತರ",
+          step3_desc: "ಸಮಯಕ್ಕೆ ಕ್ರಮ ಇಲ್ಲದಿದ್ದರೆ ಮೇಲಧಿಕಾರಿಗಳಿಗೆ ಸಾಗುತ್ತದೆ.",
+          contact_title: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+          contact_text: "ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ ಸಂಪರ್ಕಿಸಿ.",
+          footer_rights: "ಎಲ್ಲ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
+          community: "ಸಮುದಾಯ ಕೊಡುಗೆ",
+          food: "ಅನ್ನದ ಅವಶ್ಯಕತೆ",
+          medical: "ವೈದ್ಯಕೀಯ ಅಗತ್ಯ"
+        }
+      }
+    };
+
+    i18next.init({
+      lng: "en",
+      debug: true,
+      resources
+    }, function () {
+      jqueryI18next.init(i18next, $, { useOptionsAttr: true });
+      $("body").localize();
+    });
+
+    $('#languageSwitcher').on('change', function () {
+      const selectedLang = $(this).val();
+      i18next.changeLanguage(selectedLang, () => {
+        $("body").localize();
+      });
+    });
+  </script>
+</body>
+</html>
