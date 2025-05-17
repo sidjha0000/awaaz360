@@ -1,1 +1,1 @@
-# awaaz360
+Awaaz360 is a digital platform designed to empower rural citizens by allowing them to anonymously report illegal or harmful activities—such as crop burning, garbage mismanagement, or water contamination—directly to local authorities.
